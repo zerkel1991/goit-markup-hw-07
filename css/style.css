@@ -331,11 +331,10 @@ li {
   font-size: 14px;
   line-height: 1.16;
   text-align: center;
-
 }
-.section__title--tranform{
-text-transform: uppercase;
-color: #ffffff;
+.section__title--tranform {
+  text-transform: uppercase;
+  color: #ffffff;
 }
 .section__list {
   display: flex;
@@ -368,16 +367,16 @@ color: #ffffff;
 |============================
 */
 /* Общая ячейка члена команды */
-.team{
+.team {
   background-color: #f5f4fa;
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.team__list{
+.team__list {
   display: flex;
 }
 /* оформление ячейки команды */
-.team__item{
+.team__item {
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
   background-color: #ffffff;
@@ -386,11 +385,15 @@ color: #ffffff;
 }
 
 /* падинги для ящика с описанием члена команды */
-.team__container{
+.team__container {
   padding: 30px;
 }
+.team__item:not(:last-child){
+  margin-right: 30px;
+
+}
 /* имя члена команды */
-.section__title--team{
+.section__title--team {
   color: var(--brandblack);
   font-size: 16px;
   text-align: center;
@@ -399,7 +402,7 @@ color: #ffffff;
   margin-bottom: 10px;
 }
 /* Должность */
-.section__text{
+.section__text {
   color: var(--brandgrey);
   font-size: 16px;
   font-weight: 400;
@@ -413,11 +416,12 @@ color: #ffffff;
   margin-top: 16px;
 }
 /* отступы соц иконок */
-.social__item:not(:last-child) {
+.social__items:not(:last-child) {
   margin-right: 10px;
 }
 
-.social__link {
+/* Оформление коробок иконок */
+.social__links {
   display: flex;
   width: 44px;
   height: 44px;
@@ -430,7 +434,27 @@ color: #ffffff;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.social__icon {
+.icons {
   fill: #afb1b8;
 }
+/* Фокус-ховер на рамках вокруг иконок */
+.social__links:hover,
+.social__links:focus {
+  outline-style: none;
+  border-style: none;
+  border-radius: 50%;
+  background-color: var(--brandblue);
+}
+
+/* фовер-фокус цвет самих иконок */
+.social__links:hover .icons,
+.social__links:focus .icons {
+  fill: #ffffff;
+}
+
+/**
+|============================
+|Секция FOOTER
+|============================
+*/
+
