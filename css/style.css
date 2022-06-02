@@ -257,6 +257,11 @@ li {
 |Секция Преимущества
 |============================
 */
+/* Переменные списка для сетки */
+.benefits {
+  --indent: 30px;
+  --items: 4;
+}
 /* Класс для скрытия */
 .hidden {
   appearance: none;
@@ -272,8 +277,37 @@ li {
   clip-path: inset(50%);
   margin: -1px;
 }
+/* Геометрия секции преимущества */
 .benefits-section {
   text-align: center;
   padding-top: 94px;
-  background-color: #188ce8;
 }
+/* Контейнер для иконок */
+.benefits__container {
+  display: flex;
+  width: 270px;
+  height: 120px;
+  background-color: #f5f4fa;
+  margin-bottom: 30px;
+  justify-content: center;
+  align-items: center;
+}
+/* Заголовки преимущества */
+.benefits__title {
+  font-size: 14px;
+  text-transform: uppercase;
+  line-height: 1.14;
+  text-align: left;
+  margin-bottom: 10px;
+}
+/* Параграфы преимущества */
+.benefits__text {
+  color: var(--brandgrey);
+  line-height: 1.71;
+  text-align: left;
+}
+/**
+|============================
+|Секция Чем мы занимаемся
+|============================
+*/
