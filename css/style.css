@@ -338,6 +338,7 @@ li {
 }
 .section__list {
   display: flex;
+  justify-content: center;
 }
 /* отступ между картинками */
 .section__item:not(:last-child) {
@@ -374,6 +375,7 @@ li {
 }
 .team__list {
   display: flex;
+  justify-content: center;
 }
 /* оформление ячейки команды */
 .team__item {
@@ -451,10 +453,189 @@ li {
 .social__links:focus .icons {
   fill: #ffffff;
 }
+/**
+|============================
+|Секция Постоянные клиенты
+|============================
+*/
+.clients__list
+{
+  display: flex;
+  justify-content: center;
+}
+.clients__item:not(:last-child) {
+  margin-right: 30px;
+}
+.clients__link{
+display: flex;
+width: 170px;
+height: 92px;
+justify-content: center;
+align-items: center;
+border: 1px solid #afb1b8;
+border-radius: 2px;
+transition-property: border-color;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.clients__icon {
+  fill: #afb1b8;;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.clients__link:hover,.clients__link:focus{
+  border-color:var(--brandblue);
+}
+.clients__link:hover .clients__icon,
+.clients__link:focus .clients__icon{
+  fill:var(--brandblue);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /**
 |============================
 |Секция FOOTER
 |============================
 */
+/* Большой ящик для футера */
+.footer{
+  max-width: 1600px;
+  margin: 0 auto;
+  background-color: var(--brandbackground);
+  padding: 60px 0;
+}
+.footer-container
+{ display: flex;
+  align-items: baseline;
+}
+/* цвет Студио для футера */
+.footer_logo{
+  padding: 0;
+  margin-bottom: 20px;
+}
+.header__logo--footer{
+  color: #ffffff;
+  }
+  /* контакты для футера */
+  .footer__link{
+    padding: 0;
+    color: var(--footergrey);
+    font-style: normal;
+    font-weight: 400;
+  }
+  /* отступ ящика с лого и адресом в футере */
+  .footer__left{
+    margin-right: 70px;
+  } 
+  /* отступ между лишками в адрессе */
+  .adress__item:not(:last-child){
+    margin-bottom: 10px;
+  }
+  /* Сброс стилей для контактов футера */
+  .address__link{
+    text-decoration: none;
+    font-style: normal;
+  }
+  /* Оформление адреса для футера */
+  .contacts-link--secondary-color{
+    display: block;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.71;
+    font-style: normal;
+  }
+  /* Оформление заголовка */
+  .subscribe__title{
+    color: #ffffff;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  /* Цвета в футере иконок */
+  .social__links--border{
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
 
+  }
+  /* Модификатор цвета для иконок соц в футере */
+  .footer__icons--fill{
+    fill:#ffff;
+  }
+
+  /* ФОРМА В ФУТЕРЕ */
+  .form-container{
+    margin-left: 93px;
+  }
+  .footer-form{
+    display: flex;
+  }
+  .footer-form__label{
+    display: flex;
+  }
+  .footer-form__input{
+    display: block;
+    margin-right: 12px;
+    width: 358px;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: #ffff;
+    border-radius: 4px;
+    padding: 15px;
+  }
+  /* КНОПКА И ЕЕ ТЕКСТ+ИКОНКА */
+  .form__button{
+    position: relative;
+    background-color: #2196f3;
+    width: 200px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 4px;
+    cursor: pointer;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    border: none;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .button__text{
+    padding: 10px 62px 10px 29px;
+  }
+  .button__icon{
+    position: absolute;
+    top: 13px;
+    right: 28px;
+    fill: #ffff;
+  }
+  .form__button:hover,.form__button:focus{
+    background-color:#188ce8;
+  }
+  /* КОНЕЦ КНОПКИ */
+     /*  */
+
+
+/**
+|============================
+|Секция ПОРТФОЛИО
+|============================
+*/
