@@ -259,8 +259,9 @@ li {
 */
 /* Переменные списка для сетки */
 .benefits {
-  --indent: 30px;
-  --items: 4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 /* Класс для скрытия */
 .hidden {
@@ -281,6 +282,9 @@ li {
 .benefits-section {
   text-align: center;
   padding-top: 94px;
+}
+.benefits__items:not(:last-child){
+  margin-right: 30px;
 }
 /* Контейнер для иконок */
 .benefits__container {
@@ -675,15 +679,16 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 /* Элементы фильтра */
 .filter {
   display: flex;
-  --items: 9;
-  --indent: 30px;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
+
 .filter-item{
   transition-property: box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .submenu{
   position: relative;
   background-color: rgba(33, 150, 243, 0.9);
