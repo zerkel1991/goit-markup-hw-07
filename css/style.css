@@ -688,6 +688,10 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+.filter-item:nth-child(n+4){
+  margin-top: 30px;
+}
+
 
 .submenu{
   position: relative;
