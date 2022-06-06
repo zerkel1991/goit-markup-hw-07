@@ -1,9 +1,9 @@
 @charset "UTF-8";
 body {
   margin: 0;
-  font-family: 'Roboto', sans-serif, Raleway;
+  font-family: "Roboto", sans-serif;
   font-size: 14px;
-  color: var(--brandblack);
+  color: #212121;
   background-color: #ffffff;
   letter-spacing: 0.03em;
 }
@@ -48,10 +48,13 @@ li {
 }
 
 /* Общий контейнер хедера */
+.header-container {
+  border-bottom: 1px solid #ececec;
+}
+
 .header {
   display: flex;
   align-items: center;
-  border-bottom: 1px solid #ececec;
 }
 
 /* Геометрия логотипа хедера */
@@ -508,7 +511,6 @@ li {
 */
 /* Большой ящик для футера */
 .footer {
-  max-width: 1600px;
   margin: 0 auto;
   background-color: #2f303a;
   padding: 60px 0;
@@ -738,12 +740,14 @@ li {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  margin-bottom: 4px;
 }
 
 .filter__text {
   color: #757575;
   font-size: 16px;
   line-height: 1.87;
+  margin-bottom: 0;
 }
 
 .filter-item:hover {

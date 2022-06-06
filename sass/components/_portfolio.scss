@@ -87,11 +87,13 @@
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
+    margin-bottom: 4px;
   }
   .filter__text{
     color: $brandgrey;
     font-size: 16px;
     line-height: 1.87;
+    margin-bottom: 0;
   }
   .filter-item:hover {
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.423);

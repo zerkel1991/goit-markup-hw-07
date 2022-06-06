@@ -1,7 +1,7 @@
 @import './utils/_vars';
-@import './components/body';
-@import './utils/reset';
-@import './components/main-container';
+@import './base/body';
+@import './base/reset';
+@import './base/main-container';
 @import './components/header';
 @import './components/header-logo';
 @import './components/nav-header';
@@ -14,6 +14,6 @@
 @import './components/footer';
 @import './components/footer-form';
 @import './components/portfolio';
-@import './utils/backdrop';
-@import './utils/modal';
-@import './utils/main-form';
+@import './components/backdrop';
+@import './components/modal';
+@import './components/main-form';
